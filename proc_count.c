@@ -22,7 +22,7 @@ static int proc_count(struct seq_file *m, void *v){
 
 	//iterate through the processes 
 	for_each_process(p) {
-		count++
+	  count++;
 	}
 
 	//print number to sequential file

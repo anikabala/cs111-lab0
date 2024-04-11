@@ -1,6 +1,6 @@
 # A Kernel Seedling
-TODO: intro
-:)
+This lab was an introduction to creating kernel modules, particularly, we were interested in locating and counting processes running on our computers. 
+
 ## Building
 ```shell
 TODO: cmd for build

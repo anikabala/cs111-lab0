@@ -7,7 +7,7 @@
 static struct proc_dir_entry *entry;
 
 static int proc_count(struct seq_file *m, void *v){
-	// TODO: it's all yours
+	// TODO: it's all yours :)
 	return 0;
 }
 

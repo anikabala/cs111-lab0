@@ -6,18 +6,14 @@
 
 static struct proc_dir_entry *entry;
 
-//proc_create_single
-// proc_remove
-// for_each_process
-// seq_printf
 
-//Properly create and remove /proc/count when your module loads and unloads, respectively
-// Make /proc/count return some string when you cat /proc/count
-//Make /proc/count return a integer with the number of running processes (or tasks) when you cat /proc/count
-
+//function that counts the processes running on kernel
 static int proc_count(struct seq_file *m, void *v){
+
 	//access the kernel's running process task struct
 	struct task_struct *p;
+
+	//counter
 	int count = 0;
 
 	//iterate through the processes 
@@ -25,7 +21,7 @@ static int proc_count(struct seq_file *m, void *v){
 	  count++;
 	}
 
-	//print number to sequential file
+	//print number to sequential file with newline char
 	seq_printf(m, "%d\n", count);
 	return 0;
 }

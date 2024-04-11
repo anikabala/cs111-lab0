@@ -16,7 +16,7 @@ static struct proc_dir_entry *entry;
 //Make /proc/count return a integer with the number of running processes (or tasks) when you cat /proc/count
 
 static int proc_count(struct seq_file *m, void *v){
-	    //seq_printf(m, "%d\n", 3);
+	seq_printf(m, "%d\n", 3);
 	return 0;
 }
 
